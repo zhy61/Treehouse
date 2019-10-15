@@ -41,7 +41,6 @@ do {
 	}
 } while (!correctGuess)
 document.write("You have made: "+guessCount+"guesses!");
-*/
 
 var html = '';
 var red;
@@ -61,3 +60,4 @@ for(var i=1; i<=100; i+=1){
 }
 document.write(html);
 console.log(html);
+*/
