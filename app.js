@@ -7,14 +7,17 @@ const myTextInput = document.getElementById('myTextInput');
 const myParagraph = document.getElementsByTagName('p')[0];
 const myParagraph1 = document.getElementsByTagName('p')[1];
 const myList = document.getElementsByTagName('li');
+const input = document.querySelector('input');
+const p = document.querySelector('p.description');
+const button = document.querySelector('button');
 
 myHeading.addEventListener('click', () => {
 	myHeading.style.color = 'red';
 }); 
 
-myButton.addEventListener('click', () => {
+/*myButton.addEventListener('click', () => {
 	myHeading.style.color = myTextInput.value;
-});
+});*/
 
 myParagraph.addEventListener('click', () => {
 	myParagraph.style.color = 'blue';
@@ -24,18 +27,22 @@ myParagraph1.addEventListener('click', () => {
 	myParagraph1.style.color = 'purple';
 });
 
+button.addEventListener('click', () => {
+	p.innerHTML = input.value + ':';
+});
+
+// p.title = "List Description";
+
 for(var i=0; i<myList.length; i++){
 	myList[i].style.color = 'purple';
 }
 
 const errorPurple = document.getElementsByClassName('Not_purple');
-
 for(var i=0; i<errorPurple.length; i++){
 	errorPurple[i].style.color = 'red';
 }
 
 const events = document.querySelectorAll('li:nth-child(even)')
-
 for(var i=0; i<events.length; i++){
 	events[i].style.backgroundColor = 'lightgray';
 }
