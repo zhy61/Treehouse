@@ -13,8 +13,10 @@ function print(message){
 var message = '<p>Hello, my name is: ' + person.name + '.</p>';
 person.name = 'Janet';
 message += person.name;
-print(message + "\n");
+//print(message + "\n");
 
-for(var key in person){
+/*for(var key in person){
 	console.log(key+":"+person[key]);
-}
+}*/
+
+document.write(`Hello, ${person.name}!`);
